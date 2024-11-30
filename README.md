@@ -1,9 +1,45 @@
 # 2048_PythonFinalProject_CSA
+
+## How to Run the Application
+
+### Prerequisites
+1. **Install Python**:
+   - Ensure Python 3.8+ is installed. Download it [here](https://www.python.org/).
+
+2. **Install Dependencies**:
+   - Use the following command to install the required libraries:
+     ```bash
+     pip install pygame
+     ```
+
+3. **Required Files**:
+   - Ensure the following files are in the project directory:
+     - `2048game.py`
+     - `database.py` (code provided below for database operations)
+     - Required assets:
+       - `start_screen_background.jpg`
+       - `sound_effect.wav`
+       - `game_over_sound.wav`
+       - `Backgroundmusic.mp3`
+4. **Run the Game**
+   - Run the `2048game.py` file to play the game
+     
 ---
-## Instruction on how to run the code application :
 
+## How to Play
+1. **Objective**:  
+   Combine tiles with the same number to create a tile with the value `2048` (or as high as possible).
+   
+2. **Gameplay**:  
+   - Use the arrow keys (`↑`, `↓`, `←`, `→`) to move the tiles on the grid.
+   - Tiles with the same number merge into one tile when they collide.
+   - After every move, a new tile (2 or 4) appears randomly on the grid.
+   - The game ends when no moves are possible.
 
-
+3. **Tips**:  
+   - Plan your moves to avoid filling up the grid.
+   - Focus on merging tiles toward one corner for better control.
+   - Think ahead to create opportunities for larger merges.
 
 ---
 
@@ -66,11 +102,12 @@ This project aims to recreate the popular "2048" game with an interactive interf
 ---
 
 ## Database Applied
-### The project uses a simple database to store the highest score. 
-- Type: SQLite (local database).
-- High Scores Table: Stores the highest score for the player.
-- Records: Tracks the maximum tile value that the player had reached.
-
+The project uses a simple database to store the highest score. 
+- **Type**: SQLite (local database).
+- **Tables**:
+  - `high_scores`: Stores player name and highest score.
+- **Records**:
+  - Tracks the maximum tile value reached for each player.
 ---
 
 ## Project Reference / Source
