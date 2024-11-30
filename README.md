@@ -1,60 +1,74 @@
 # 2048_PythonFinalProject_CSA
 ---
+## Instruction on how to run the code application :
+
+
+
 
 ---
 
-## Project Issue / Problem to Be Solved
+## Project Issue 
 
-The goal of this project is to implement a 2048 game with a persistent high score system. The game needs to store the highest score a player achieves and provide functionality for playing the game with smooth animations and responsive design. The challenge is to ensure that the game mechanics, including tile movements, merges, and game-over detection, function correctly, while integrating a backend database to save and retrieve high scores.
+This project aims to recreate the popular "2048" game with an interactive interface, scoring mechanism, and custom features like animations and sound effects. The game needs to store the highest score of a player and provide functionality for playing the game with smooth animations and responsive design. The challenge is to ensure that the game mechanics, including tile movements, merges, and game-over detection, function correctly, while including a database to save and retrieve the highest score of the player.
 
 ---
 
-## Current Progress (PDLC: Problem Analysis, Design, etc.)
+## Current Progress 
 
 ### Problem Analysis:
-- Identified the need for a game that tracks the highest score over multiple sessions.
-- Needed to optimize the tile merging mechanics and add smooth animations for a better user experience.
+- Understanding the mechanics of the original 2048 game.
+- Identifying requirements like grid size, tile mechanics, and scoring, etc.
 
 ### Design:
 - Designed a 4x4 grid to represent the game board.
-- Decided on the use of arrow keys to control tile movements.
-- Database schema for storing the highest score was planned.
-
+- Designed a GUI using Pygame with animations and color-coded tiles.
+  
 ### Implementation:
-- Developed the basic game logic (tile movement, merging, game-over conditions).
-- Implemented front-end (HTML/CSS) for displaying the game and handling user input.
-- Built the back-end (using a simple database) to store the highest score.
+- Core game logic: Tile movement, tile merging, random tile generation, game-over conditions .
+- User interface: Start screen, game screen, and game-over screen.
+- Sound effects and music integration.
+- Built a simple database to store and retrieve the highest score of the player.
+  
+### Testing:
+- Functional testing of tile movement and scoring.
+- Validated database interactions for high scores.
+
+### Future Steps:
+- Optimization of game mechanics.
+- Adding advanced animations and additional modes/levels for the game.
+- Implementing a more advanced database that allows players to input their usernames and compete with each other.
 
 ---
 
 ## Project Functions / Features
 
-- **Save Data**: The game stores the highest score achieved in a database.
-- **Search**: The game can retrieve the highest score from the database.
-- **Delete**: The user can reset the game and remove the current high score.
-- **Update**: The game updates the highest score whenever a new record is achieved.
-- **Tile Movement and Merging**: Tiles move smoothly in any direction (left, right, up, down), merging when necessary.
-- **Game Over**: The game detects when no further moves or merges are possible, triggering a game-over state.
+### Core Features:
+- Move tiles in all four directions (Up, Down, Left, Right).
+- Merge tiles with the same value to create higher numbers.
+- Random tile generation with values 2 or 4.
+- Game-over detection based on tile positions.
+
+### Additional Features:
+- Save the highest score in a local database.
+- Display "Game Over" and retry option.
+- Animated start screen and loading effects.
+- Background music and sound effects.
 
 ---
 
-## Expected Number of Pages
+## Expected Pages
 
-1. **Home Page**: The main game interface where the player can play the game.
-2. **Game Over Page**: A page that displays the final score and asks the player to start a new game or view the high score.
-3. **High Score Page**: A page displaying the highest score stored in the database.
+1.**Home Page**: Start screen with "Start" button.
+2.**Game Screen**: Main 2048 grid and gameplay.
+3.**Game Over Screen**: Displays current and highest scores with a retry button.
 
 ---
 
 ## Database Applied
-
-The project uses a simple database to store the highest score. The database consists of the following:
-
-- **Players Table**:
-  - `player_id` (VARCHAR): A unique identifier for the player.
-  - `highest_score` (INT): The highest score achieved by the player.
-  
-The game retrieves and updates the highest score from this table whenever the player finishes a game.
+The project uses a simple database to store the highest score. 
+- Type: SQLite (local database).
+- High Scores Table: Stores the highest score for the player.
+- Records: Tracks the maximum tile value that the player had reached.
 
 ---
 
