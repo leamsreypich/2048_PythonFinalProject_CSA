@@ -1,7 +1,6 @@
 # 2048_PythonFinalProject_CSA
---- 
-## How to Run the Application: 
 
+## How to Run the Application: 
 ### Prerequisites
 1. **Install Python**:
    - Ensure Python 3.8+ is installed. Download it [here](https://www.python.org/).
