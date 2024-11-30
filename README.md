@@ -67,9 +67,9 @@ This project aims to recreate the popular "2048" game with an interactive interf
 
 ## Database Applied
 ### The project uses a simple database to store the highest score. 
-#### - Type: SQLite (local database).
-#### - High Scores Table: Stores the highest score for the player.
-#### - Records: Tracks the maximum tile value that the player had reached.
+- Type: SQLite (local database).
+- High Scores Table: Stores the highest score for the player.
+- Records: Tracks the maximum tile value that the player had reached.
 
 ---
 
