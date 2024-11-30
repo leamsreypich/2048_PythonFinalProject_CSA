@@ -56,19 +56,20 @@ This project aims to recreate the popular "2048" game with an interactive interf
 
 ---
 
-## Expected Pages
+## Expected Number of Pages
 
-1.**Home Page**: Start screen with "Start" button.
-2.**Game Screen**: Main 2048 grid and gameplay.
-3.**Game Over Screen**: Displays current and highest scores with a retry button.
+1. **Home Page**: Start screen with "Start" button.
+2. **Game Screen**: Main 2048 grid and gameplay.
+3. **Game Over Screen**: Displays current and highest scores with a retry button.
+
 
 ---
 
 ## Database Applied
-The project uses a simple database to store the highest score. 
-- Type: SQLite (local database).
-- High Scores Table: Stores the highest score for the player.
-- Records: Tracks the maximum tile value that the player had reached.
+### The project uses a simple database to store the highest score. 
+#### - Type: SQLite (local database).
+#### - High Scores Table: Stores the highest score for the player.
+#### - Records: Tracks the maximum tile value that the player had reached.
 
 ---
 
