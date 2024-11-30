@@ -1,6 +1,6 @@
 # 2048_PythonFinalProject_CSA
-
-## How to Run the Application
+--- 
+## How to Run the Application: 
 
 ### Prerequisites
 1. **Install Python**:
