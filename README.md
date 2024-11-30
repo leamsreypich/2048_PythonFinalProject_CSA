@@ -14,7 +14,7 @@
 3. **Required Files**:
    - Ensure the following files are in the project directory:
      - `2048game.py`
-     - `database.py` (code provided below for database operations)
+     - `database.py` 
      - Required assets:
        - `start_screen_background.jpg`
        - `sound_effect.wav`
